@@ -1,0 +1,122 @@
+.slider-box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    width: auto;
+    top: 25%;
+    left: 65%;
+    color: #fff;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .texto{
+        font-size: xx-small;
+        width: auto;
+        top: 30%;
+    }
+    h1{
+        font-size: medium;
+    }
+}
+
+
+/* ExtraSmall devices*/
+@media (max-width: 575px) {
+    .texto {
+        width: auto;
+        top: 20%;
+        left: 60%;
+        font-size: xx-small;
+    }
+    .slider-box{
+        margin-top: 11%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .texto {
+        width: auto;
+        top: 20%;
+        left: 60%;
+        font-size: small;
+    }
+    .slider-box{
+        margin-top: 8%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .texto {
+        width: auto;
+        top: 25%;
+        left: 60%;  
+    }
+    .slider-box{
+        margin-top: 6%;
+    }
+}
+ 
+@media (min-width: 992px) and (max-width: 1200px) {
+    .slider-box{
+        margin-top: 5%;
+    }
+}
